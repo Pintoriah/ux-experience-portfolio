@@ -8,7 +8,7 @@
 <title>Yemisi Victoria Oyewola | UX Research Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F6F8F9;--surface:#FFFFFF;--ink:#14232B;--muted:#53646C;--line:#D3DCE0;--accent:#0F6B6B;--accent-soft:#DCEFEF;--mark:#E0A526;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -16,8 +16,8 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 :root[data-theme="dark"]{--bg:#0F1A1F;--surface:#16252B;--ink:#E8EEF0;--muted:#9DB0B8;--line:#2A3D45;--accent:#5CC4C4;--accent-soft:#17383B;--mark:#E8B84A}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
-h1,h2,h3{font-family:"Bricolage Grotesque","Source Sans 3",system-ui,sans-serif;line-height:1.15;margin:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 Lato,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Lato,system-ui,sans-serif;line-height:1.15;margin:0}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
 .wrap{max-width:860px;margin:0 auto;padding:0 22px}
@@ -25,8 +25,10 @@ header.top{padding:72px 0 48px;border-bottom:1px solid var(--line)}
 h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:700;letter-spacing:-.02em}
 .role{font-size:1.25rem;color:var(--muted);margin:14px 0 22px;max-width:34em}
 .pitch{max-width:36em;margin:0 0 24px}
-nav a{margin-right:20px;font-weight:600;text-decoration:none;border-bottom:2px solid var(--line);padding-bottom:2px}
-nav a:hover{border-color:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:14px;padding-bottom:6px}
+nav a{display:inline-block;padding:10px 18px;font-weight:700;text-decoration:none;color:var(--ink);background:linear-gradient(var(--surface),var(--accent-soft));border:1px solid var(--accent);border-radius:8px;box-shadow:0 4px 0 var(--accent),0 7px 10px rgba(0,0,0,.18);transition:transform .08s ease,box-shadow .08s ease}
+nav a:hover{transform:translateY(-1px);box-shadow:0 5px 0 var(--accent),0 9px 12px rgba(0,0,0,.2)}
+nav a:active{transform:translateY(3px);box-shadow:0 1px 0 var(--accent),0 2px 4px rgba(0,0,0,.2)}
 section{padding:56px 0;border-bottom:1px solid var(--line)}
 h2{font-size:1.8rem;margin-bottom:18px}
 h3{font-size:1.2rem;margin:30px 0 8px}
@@ -65,7 +67,7 @@ ul.clean li{margin-bottom:6px}
 .more li{margin-bottom:12px}
 footer{padding:40px 0 56px;color:var(--muted)}
 @media (max-width:620px){.flow{grid-template-columns:1fr}.flow>div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}.facts div{border-right:0;border-bottom:1px solid var(--line)}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}nav a{transition:none}}
 </style>
 </head>
 <body>
@@ -73,7 +75,7 @@ footer{padding:40px 0 56px;color:var(--muted)}
 <h1>Yemisi Victoria Oyewola</h1>
 <p class="role">User researcher focused on how students, faculty, and researchers find, use, and judge information.</p>
 <p class="pitch">Ph.D. in Engineering Education and M.Sc. in Information Science. I run qualitative, quantitative, and mixed-methods studies and turn the findings into recommendations that decision-makers can act on.</p>
-<nav aria-label="Sections"><a href="#case">Grammarly study</a><a href="#retreat">Retreat evaluation</a><a href="#leadership">Leadership study</a><a href="#about">Background</a><a href="#more">Other research</a><a href="#contact">Contact</a></nav>
+<nav aria-label="Sections"><a href="#case">Grammarly study</a><a href="#retreat">Program evaluation</a><a href="#leadership">Leadership study</a><a href="#about">Background</a><a href="#more">Other research</a><a href="#contact">Contact</a></nav>
 </div></header>
 
 <main>
